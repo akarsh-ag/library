@@ -10,6 +10,7 @@
                     <v-text-field label="password" type="password" v-model="password"></v-text-field>
                     <template>
                             <v-btn block class="base-inverted" @click="authenticate()" >LOGIN</v-btn>
+                        
                     </template>
             </v-col>
 
