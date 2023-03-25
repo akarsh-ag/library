@@ -10,7 +10,8 @@
 
           <v-spacer></v-spacer>
           <v-icon>mdi-account-circle</v-icon>
-          <v-btn text @click="aboutpage">About</v-btn>
+          
+          <v-btn  @click="$router.push('about')">About</v-btn>
           <v-btn text>Login</v-btn>
       </v-app-bar>
   </div>

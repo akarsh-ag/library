@@ -1,19 +1,21 @@
 <template>
   <v-app>
       <navbar></navbar>
-    <v-main>
+      
+      
+      <v-main>
       <router-view />
     </v-main>
+    <bottom-navbar></bottom-navbar>
   </v-app>
 </template>
 
 <script>
+import BottomNavbar from './components/BottomNavbar.vue';
 import Navbar from './components/Navbar.vue';
-
 export default {
-  components: { Navbar },
+  components: { Navbar, BottomNavbar },
   name: 'App',
-
   data: () => ({
     //
   }),
