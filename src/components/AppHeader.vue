@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app-header">
     <v-row>
       <v-col cols="10">
         <h3>{{ title }}</h3>
@@ -28,4 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .app-header{
+    padding: 1rem;
+}
 </style>
