@@ -6,7 +6,7 @@
       <v-icon>mdi-book  </v-icon>
     </v-btn>
 
-    <v-btn value="favorites">
+    <v-btn value="Author" @click="$router.push('/author')">
       <span>authors</span>
 
       <v-icon>mdi-badge-account</v-icon>

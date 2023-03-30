@@ -5,14 +5,13 @@
         <h3>{{ title }}</h3>
       </v-col>
       <v-col cols="2">
-        <v-btn>+</v-btn>
+        <div class="text-right">
+        <v-btn><v-icon small>mdi-plus</v-icon></v-btn>
+      </div>
       </v-col>
     </v-row>
     <v-row>
-      <v-text-field
-        label="Append outer"
-        append-outer-icon="mdi-map-marker"
-      ></v-text-field>
+      <v-text-field solo label="" append-icon="mdi-magnify"></v-text-field>
     </v-row>
   </div>
 </template>
@@ -29,6 +28,6 @@ export default {
 
 <style lang="scss" scoped>
   .app-header{
-    padding: 1rem;
+    padding: 2rem;
 }
 </style>

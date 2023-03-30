@@ -18,6 +18,16 @@ const routes = [
     component: () => import('../views/Books.vue')
   },
   {
+    path: '/issue',
+    name: 'issue',
+    component: () => import('../views/issue.vue')
+  },
+  {
+    path: '/author',
+    name: 'author',
+    component: () => import('../views/author.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     

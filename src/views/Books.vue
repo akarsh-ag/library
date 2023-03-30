@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header title="Books"></app-header>
     <v-list dense>
       <v-list-item v-for="(item, i) in books" :key="i">
         <v-list-item-avatar tile>
