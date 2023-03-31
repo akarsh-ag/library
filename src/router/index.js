@@ -28,6 +28,11 @@ const routes = [
     component: () => import('../views/author.vue')
   },
   {
+    path: '/books/:id',
+    name: 'BookEdit',
+    component: () => import('../views/BookEdit.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     

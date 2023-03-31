@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-header title="Books"></app-header>
+    <app-header title="Books" tooltip="Add Book" @add="$router.push('/books/0')" @search=searchBooks($event)></app-header>
     <v-list dense>
       <v-list-item v-for="(item, i) in books" :key="i">
         <v-list-item-avatar tile>
@@ -22,7 +22,7 @@
               </v-btn>
             </template>
             <v-list>
-              <v-list-item >
+              <v-list-item @click="$router.push('/books/'+item._id)">
                 <v-list-item-title>Edit</v-list-item-title>
                 <v-icon>mdi-pencil</v-icon>
               </v-list-item>
@@ -58,6 +58,13 @@ export default {
       books: booksList,
     };
   },
+  methods: {
+    searchBooks(text){
+      console.log(text)
+      // this.book.filter((booksList) =>book.toLowerCase().includes(input.value.toLowerCase())
+    
+    }
+  }
 };
 </script>
 

@@ -24,7 +24,7 @@
                 <v-list-item>
                   <v-list-item-title>Delete</v-list-item-title>
                   <v-icon>mdi-delete</v-icon>
-                </v-list-item>
+                </v-list-item>  
               </v-list>
             </v-menu>
           </div>

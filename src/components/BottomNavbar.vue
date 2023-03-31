@@ -12,8 +12,8 @@
       <v-icon>mdi-badge-account</v-icon>
     </v-btn>
 
-    <v-btn value="nearby">
-      <span>Members</span>
+    <v-btn value="Issue" @click="$router.push('/issue')"> 
+      <span>Issue</span>
 
       <v-icon>mdi-train-car-autorack</v-icon>
     </v-btn>

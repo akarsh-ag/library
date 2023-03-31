@@ -6,12 +6,14 @@
       </v-col>
       <v-col cols="2">
         <div class="text-right">
-        <v-btn><v-icon small>mdi-plus</v-icon></v-btn>
+        <v-btn :title="tooltip" @click="$emit('add')">
+          <v-icon small>mdi-plus</v-icon>
+        </v-btn>
       </div>
       </v-col>
     </v-row>
     <v-row>
-      <v-text-field solo label="" append-icon="mdi-magnify"></v-text-field>
+      <v-text-field placeholder="Search" solo label="" append-icon="mdi-magnify" @input="$emit('search', $event)"></v-text-field>
     </v-row>
   </div>
 </template>
